@@ -543,12 +543,10 @@
         "pushkin_kassir": "https://widget.kassir.ru/?type=O&key=87cdee68-4606-9f18-a648-60cf5e1be95d&domain=rnd.kassir.ru&id=40600"
     },
     "menu": [
-        {"text": "🏛 Библиотеки", "payload": "menu:branches"},
-        {"text": "📖 Что почитать", "payload": "menu:books"},
-        {"text": "🕐 Работаем сейчас?", "payload": "menu:hours"},
-        {"text": "📅 Афиша", "payload": "menu:events"},
-        {"text": "🎟 Пушкинская карта", "payload": "menu:pushkin"},
-        {"text": "🎫 Чит. билет", "payload": "menu:register"},
-        {"text": "📞 Связаться", "payload": "menu:contacts"}
+        [{"text": "🏛 Библиотеки", "payload": "menu:branches"}],
+        [{"text": "📖 Что почитать", "payload": "menu:books"}],
+        [{"text": "🕐 Работаем сейчас?", "payload": "menu:hours"}, {"text": "📅 Афиша", "payload": "menu:events"}],
+        [{"text": "🎟 Пушкинская карта", "payload": "menu:pushkin"}, {"text": "🎫 Чит. билет", "payload": "menu:register"}],
+        [{"text": "📞 Связаться", "payload": "menu:contacts"}]
     ]
 }
