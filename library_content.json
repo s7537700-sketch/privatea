@@ -550,6 +550,5 @@
         {"text": "🎟 Пушкинская карта", "payload": "menu:pushkin"},
         {"text": "🎫 Чит. билет", "payload": "menu:register"},
         {"text": "📞 Связаться", "payload": "menu:contacts"},
-        {"text": "📍 Ближайшая библиотека", "payload": "menu:nearest"}
     ]
 }
