@@ -14,14 +14,19 @@ CATALOG_URL = CATALOG_URL  # local alias
 EVENTS_URL = "https://vdonlib.ru/event/"
 
 
-def main_menu_kb(menu: list[dict]) -> InlineKeyboardBuilder:
+def main_menu_kb(menu: list) -> InlineKeyboardBuilder:
     b = InlineKeyboardBuilder()
-    for btn in menu:
-        payload = btn["payload"]
-        if payload == "link:website":
-            b.row(LinkButton(text=btn["text"], url=WEBSITE_URL))
-        else:
-            b.row(CallbackButton(text=btn["text"], payload=payload))
+    for row in menu:
+        if not row:
+            continue
+        btns = []
+        for btn in row:
+            payload = btn["payload"]
+            if payload == "link:website":
+                btns.append(LinkButton(text=btn["text"], url=WEBSITE_URL))
+            else:
+                btns.append(CallbackButton(text=btn["text"], payload=payload))
+        b.row(*btns)
     return b.as_markup()
 
 
