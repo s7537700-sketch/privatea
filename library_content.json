@@ -549,6 +549,6 @@
         {"text": "📅 Афиша", "payload": "menu:events"},
         {"text": "🎟 Пушкинская карта", "payload": "menu:pushkin"},
         {"text": "🎫 Чит. билет", "payload": "menu:register"},
-        {"text": "📞 Связаться", "payload": "menu:contacts"},
+        {"text": "📞 Связаться", "payload": "menu:contacts"}
     ]
 }
