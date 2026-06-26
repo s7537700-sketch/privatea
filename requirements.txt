@@ -1,0 +1,8 @@
+aiogram>=3
+aiohttp
+beautifulsoup4
+maxapi>=1.0.0
+openai
+pypdf
+python-dotenv>=1.0.0
+requests
